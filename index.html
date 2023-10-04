@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tip Calculator using HTML, CSS, and JavaScript">
+    <title>TIP CALCULATOR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title"><span>TIP CALCULATOR</span></div>
+    <div class="container">
+        <section class="Calculator">
+            <div class="bill">
+                <form>
+                    <h1>Bill</h1>
+                    <input type="text" class="label" placeholder="">
+                </form>
+            </div>
+            <form>
+                <div id="buttons">
+                    <h1>Select Tip %</h1>
+                    <button class="btn" type="button" value="5">5%</button>
+                    <button class="btn" type="button" value="10">10%</button>
+                    <button class="btn" type="button" value="15">15%</button>
+                    <button class="btn" type="button" value="25">25%</button>
+                    <button class="btn" type="button" value="50">50%</button>
+                    <button class="btn" type="button" value="75">75%</button>
+                    <input type="text" class="btn custom-tip" placeholder="Custom " value="" id="customTip">
+                </div>
+            </form>
+            <div>
+                <form>
+                    <h1>Number of People</h1>
+                    <input type="text" class="label1" placeholder="">
+                </form>
+            </div>
+        </section>
+        <section class="result">
+            <div class="info">
+                <div class="amount">
+                    <div class="name">
+                        <h2>Tip Amount</h2>
+                        <h3>/ person</h3>
+                    </div>
+                    <h1>$<span id="tipPerson">0.00</span></h1>
+                </div>
+                <div class="amount">
+                    <div class="name">
+                        <h2>Total</h2>
+                        <h3>/ person</h3>
+                    </div>
+                    <h1>$<span id="totalPerson">0.00</span></h1>
+                </div>
+            </div>
+            <button id="resetValues">Reset</button>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
